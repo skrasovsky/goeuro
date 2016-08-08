@@ -1,0 +1,26 @@
+{
+    "_id": 314826,
+    "key": "key",
+    "name": "Berlin Tegel",
+    "fullName": "Berlin Tegel (TXL), Germany",
+    "iata_airport_code": "TXL",
+    "type": "airport",
+    "country": "Germany",
+    "geo_position": {
+        "latitude": 52.5548,
+        "longitude": 13.28903
+    },
+    "locationId": 1234,
+    "inEurope": true,
+    "countryId": 56,
+    "countryCode": "DE",
+    "coreCountry": true,
+    "distance": 55.55,
+    "names": {
+        "es": "Berlín-Tegel",
+        "it": "Berlino Tegel",
+        "ca": "Berlín-Tegel",
+        "nl": "Berlijn Tegel"
+    },
+    "alternativeNames": {}
+}

@@ -1,0 +1,21 @@
+{
+    "_id": null,
+    "key": null,
+    "name": null,
+    "fullName": null,
+    "iata_airport_code": null,
+    "type": null,
+    "country": null,
+    "geo_position": {
+        "latitude": null,
+        "longitude": null
+    },
+    "locationId": null,
+    "inEurope": null,
+    "countryId": null,
+    "countryCode": null,
+    "coreCountry": null,
+    "distance": null,
+    "names": {},
+    "alternativeNames": {}
+}
