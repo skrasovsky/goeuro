@@ -27,7 +27,7 @@ Create class:
     allowedParams = {"locale: e.g. en, de, fr", "city: e.g. Berlin, London, Munich"},
     example = "/position/suggest/en/Berlin"
 )
-public class GetLocationsByCityCSV extends APICommand {
+public class GetLocationsByCityCSV extends APICommand implements Command {
 
     @Override
     public void execute(APICommandContext context) {
