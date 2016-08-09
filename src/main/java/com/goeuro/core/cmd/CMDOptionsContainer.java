@@ -60,13 +60,7 @@ public class CMDOptionsContainer {
      */
     public void printCMDHelp() {
         HelpFormatter helpFormatter = new HelpFormatter();
-        StringBuilder helpBuilder = new StringBuilder();
-        helpBuilder.append(properties.helpUsage());
-        helpBuilder.append("\n");
-        helpBuilder.append(properties.helpExample());
-        helpBuilder.append("\n");
-        helpBuilder.append("\n");
-        helpFormatter.printHelp(helpBuilder.toString(), options);
+        helpFormatter.printHelp(properties.helpUsage() + "\n" + properties.helpExample() + "\n" + "\n", options);
     }
 
     private Option initListCommandOption() {

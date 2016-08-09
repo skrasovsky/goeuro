@@ -22,7 +22,7 @@ public class CommandContainer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CommandContainer.class);
 
-    private Class<API> annotation = API.class;
+    private final Class<API> annotation = API.class;
 
     @Autowired
     private ApplicationContext context;

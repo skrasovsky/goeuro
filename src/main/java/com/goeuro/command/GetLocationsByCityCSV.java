@@ -121,7 +121,7 @@ public class GetLocationsByCityCSV extends APICommand implements Command {
         assertThat(getContext()).isNotNull();
 
         String date = LocalDateTime.now()
-                .format(DateTimeFormatter.ofPattern(DATETIME_PATTERN)).toString();
+                .format(DateTimeFormatter.ofPattern(DATETIME_PATTERN));
 
         return String.format("%s_locations_%s.csv", getContext().getPathParams().get(CITY_PARAM), date);
     }

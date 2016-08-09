@@ -4,7 +4,6 @@ import com.goeuro.core.CommandContextBuilderException;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -162,10 +161,10 @@ public class APICommandContext {
             }
 
             paramMap = new HashMap<>(params.length, 1f);
-            for (int i = 0; i < params.length; i++) {
-                String[] param = params[i].split("=");
+            for (String p : params) {
+                String[] param = p.split("=");
                 if (param.length != 2) {
-                    String message = message("Wrong format of the command line argument %s. It should be <name=value>.", params[i]);
+                    String message = message("Wrong format of the command line argument %s. It should be <name=value>.", p);
                     error(message);
                     throw new CommandContextBuilderException(message);
                 }

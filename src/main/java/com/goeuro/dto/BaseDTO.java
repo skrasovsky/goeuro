@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class BaseDTO implements Serializable {
 
-    protected Long id;
+    private Long id;
 
     public Long getId() {
         return id;

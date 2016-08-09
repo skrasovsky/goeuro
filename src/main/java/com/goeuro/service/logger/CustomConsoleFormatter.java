@@ -12,11 +12,7 @@ public class CustomConsoleFormatter extends Formatter {
 
     @Override
     public String format(LogRecord record) {
-        StringBuilder builder = new StringBuilder();
-        builder.append("\n");
-        builder.append("[GOEURO]# ");
-        builder.append(formatMessage(record));
-        return builder.toString();
+        return "\n" + "[GOEURO]# " + formatMessage(record);
     }
 
     public String getHead(Handler handler) {

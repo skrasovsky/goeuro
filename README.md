@@ -3,7 +3,7 @@
 
 # GoEuro
 
-It is a console application, which allows to develop any kind of commands and execute them from comand line. Application contains
+It is a console application, which allows to develop any kind of commands and execute them from command line. Application contains
 only one command for the demonstration. If you need more commands you should extend library and develop your own commands.
 
 What type of commands application allows to create? Any type. 
@@ -42,7 +42,7 @@ public class GetLocationsByCityCSV extends APICommand implements Command {
 
     @Override
     protected void validateContext() {
-        // Add validation of api command context here. For example you need some requered parameters.
+        // Add validation of api command context here. For example you need some required parameters.
     }
 }
 ```
@@ -83,7 +83,7 @@ The available `-command` arguments:
 ```
 - `-query-string <arg>` - HTTP request query string parameters. Support multiple arguments. Example: 
 ```
--qs name1=valuename2=value2
+-qs name1=value name2=value2
 ```
 
 How to execute command:

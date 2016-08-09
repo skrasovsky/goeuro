@@ -1,8 +1,5 @@
 package com.goeuro.model;
 
-/**
- * Created by krasovcheg on 16/07/16.
- */
 public enum Language {
 
     AA,

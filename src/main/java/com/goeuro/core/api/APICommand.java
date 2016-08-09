@@ -42,19 +42,19 @@ public abstract class APICommand {
 
     private APICommandContext context;
 
-    public APICommandContext getContext() {
+    protected APICommandContext getContext() {
         return context;
     }
 
-    public String getBaseUrl() {
+    protected String getBaseUrl() {
         return properties.baseUrl();
     }
 
-    public String getApiVersion() {
+    protected String getApiVersion() {
         return properties.apiVersion();
     }
 
-    public String getDefaultLocale() {
+    protected String getDefaultLocale() {
         return properties.defaultLocale();
     }
 
@@ -169,7 +169,7 @@ public abstract class APICommand {
             .entrySet()
             .stream()
             .map(h -> new BasicHeader(h.getKey(), h.getValue()))
-            .toArray(size -> new Header[size]);
+            .toArray(Header[]::new);
     }
 
     /**

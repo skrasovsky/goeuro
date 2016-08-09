@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
+import static com.goeuro.service.logger.CustomConsoleLogger.warn;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
@@ -59,7 +60,9 @@ public class CSVServiceTest extends AbstractTestNGSpringContextTests {
         } finally {
             IOUtils.closeQuietly(fileReader);
             IOUtils.closeQuietly(csvFileParser);
-            file.delete();
+            if (!file.delete()) {
+                warn("Can not delete file " + fileName);
+            }
         }
     }
 
